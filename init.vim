@@ -59,6 +59,7 @@ nmap <F2> :TagbarToggle<CR>
 Plug 'itchyny/lightline.vim'
 Plug 'chriskempson/base16-vim'
 Plug 'dracula/vim'
+Plug 'owickstrom/vim-colors-paramount'
 
 call plug#end()
 
@@ -150,7 +151,7 @@ let mapleader = "\\"
 
 " Theme options
 set background=dark
-colorscheme dracula
+colorscheme paramount
 let g:lightline = {
       \ 'colorscheme': 'Tomorrow_Night',
       \ 'component_function': {
