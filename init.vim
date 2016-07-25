@@ -37,7 +37,7 @@ Plug 'scrooloose/nerdcommenter'
 
 Plug 'jeetsukumaran/vim-filebeagle'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-let g:NERDTreeMouseMode=3
+let g:NERDTreeMouseMode=1
 nnoremap <Leader>r :NERDTreeToggle<CR>
 
 Plug 'tpope/vim-surround'
