@@ -37,7 +37,7 @@ Plug 'scrooloose/nerdcommenter'
 
 Plug 'jeetsukumaran/vim-filebeagle'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-let g:NERDTreeMouseMode=1
+let g:NERDTreeMouseMode=3
 nnoremap <Leader>r :NERDTreeToggle<CR>
 
 Plug 'tpope/vim-surround'
@@ -161,6 +161,7 @@ let g:lightline = {
 function! LightLineFilename()
   return expand('%')
 endfunction
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
 " Set the tag file search order
 set tags=./tags
