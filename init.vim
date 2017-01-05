@@ -1,12 +1,11 @@
 call plug#begin('~/.vim/plugged')
 
-Plug 'rking/ag.vim'
-
-Plug 'tpope/vim-fugitive'
-
 Plug 'neomake/neomake'
 let g:neomake_javascript_enabled_makers = ['standard']
 autocmd! BufWritePost * Neomake
+
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+let g:deoplete#enable_at_startup = 1
 
 Plug 'Yggdroot/indentLine'
 
@@ -51,17 +50,13 @@ Plug 'tpope/vim-haml', { 'for': 'haml' }
 Plug 'slim-template/vim-slim', { 'for': 'slim' }
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 Plug 'fatih/vim-go', { 'for': 'go' }
-Plug 'rust-lang/rust.vim', { 'for': 'rust' }
-let g:rustfmt_autosave = 1
 
 Plug 'majutsushi/tagbar'
 nmap <F2> :TagbarToggle<CR>
 
-" Theme plugins.
+"" Theme plugins.
 Plug 'itchyny/lightline.vim'
-Plug 'chriskempson/base16-vim'
 Plug 'dracula/vim'
-Plug 'owickstrom/vim-colors-paramount'
 
 call plug#end()
 
