@@ -50,6 +50,7 @@ Plug 'tpope/vim-haml', { 'for': 'haml' }
 Plug 'slim-template/vim-slim', { 'for': 'slim' }
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 Plug 'fatih/vim-go', { 'for': 'go' }
+Plug 'rust-lang/rust.vim', { 'for': 'rust' }
 
 Plug 'majutsushi/tagbar'
 nmap <F2> :TagbarToggle<CR>
