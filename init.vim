@@ -51,6 +51,7 @@ Plug 'slim-template/vim-slim', { 'for': 'slim' }
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 Plug 'fatih/vim-go', { 'for': 'go' }
 Plug 'rust-lang/rust.vim', { 'for': 'rust' }
+let g:rustfmt_autosave = 1
 
 Plug 'majutsushi/tagbar'
 nmap <F2> :TagbarToggle<CR>
