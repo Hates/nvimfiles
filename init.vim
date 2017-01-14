@@ -44,12 +44,22 @@ nnoremap <Leader>r :NERDTreeToggle<CR>
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-abolish'
 
-Plug 'tpope/vim-rails', { 'for': ['ruby', 'eruby'] }
 Plug 'vim-ruby/vim-ruby', { 'for': ['ruby', 'eruby'] }
+Plug 'tpope/vim-rails', { 'for': ['ruby', 'eruby'] }
 Plug 'tpope/vim-haml', { 'for': 'haml' }
 Plug 'slim-template/vim-slim', { 'for': 'slim' }
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 Plug 'fatih/vim-go', { 'for': 'go' }
+au FileType go nmap ® <Plug>(go-run-split)
+au FileType go nmap † <Plug>(go-test)
+let g:go_term_mode = "split"
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_types = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
+
 Plug 'rust-lang/rust.vim', { 'for': 'rust' }
 let g:rustfmt_autosave = 1
 
