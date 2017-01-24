@@ -136,7 +136,11 @@ set wildignore+=*/tmp/*
 
 " Display tabs and trailing spaces
 set list
-set listchars=tab:▷⋅,trail:⋅,nbsp:⋅,extends:#
+set listchars=tab:»\ ,extends:›,precedes:‹,nbsp:·,trail:·
+augroup golang
+  autocmd BufRead *.go set nolist
+augroup END
+
 set showbreak=↪
 
 set formatoptions-=o "dont continue comments when pushing o/O
