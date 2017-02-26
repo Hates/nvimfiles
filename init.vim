@@ -50,6 +50,7 @@ Plug 'tpope/vim-haml', { 'for': 'haml' }
 Plug 'slim-template/vim-slim', { 'for': 'slim' }
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 Plug 'elixir-lang/vim-elixir', { 'for': 'elixir' }
+Plug 'rhysd/vim-crystal', { 'for': 'crystal' }
 Plug 'fatih/vim-go', { 'for': 'go' }
 au FileType go nmap ® <Plug>(go-run-split)
 au FileType go nmap † <Plug>(go-test)
