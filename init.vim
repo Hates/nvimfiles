@@ -97,7 +97,7 @@ set ignorecase "searches are case insensitive...
 set smartcase  "unless they contain one capital letter
 
 " No backups or swap
-set backup noswapfile
+set nobackup noswapfile
 
 " Make those folders automatically if they don't already exist.
 if !isdirectory(expand(&undodir))
