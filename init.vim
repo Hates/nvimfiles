@@ -77,6 +77,9 @@ call plug#end()
 " Use lazy redraw
 set lazyredraw
 
+" Set mouse mode
+set mouse=a
+
 " Make backspace work like other apps
 set backspace=2
 
@@ -86,8 +89,7 @@ filetype plugin indent on
 " Statusline settings
 set noshowmode showcmd cmdheight=2
 
-" Store lots of :cmdline history
-set undoreload=10000
+" Enable the undofile
 set undofile
 
 " Searching
@@ -96,10 +98,6 @@ set smartcase  "unless they contain one capital letter
 
 " No backups or swap
 set backup noswapfile
-
-set undodir=~/.vim/tmp/undo// " undo files
-set backupdir=~/.vim/tmp/backup// " backups
-set directory=~/.vim/tmp/swap// " swap files
 
 " Make those folders automatically if they don't already exist.
 if !isdirectory(expand(&undodir))
@@ -154,9 +152,6 @@ set sidescroll=1
 " Turn on syntax highlighting
 syntax enable
 syntax sync minlines=250
-
-" Highlight search results
-set hlsearch
 
 " Hide buffers when not displayed
 set hidden
