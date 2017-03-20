@@ -10,7 +10,7 @@ let g:deoplete#enable_at_startup = 1
 Plug 'Yggdroot/indentLine'
 
 Plug 'ludovicchabant/vim-gutentags'
-let gutentags_tagfile = '.tags'
+let g:gutentags_cache_dir = '~/.tags_cache'
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
