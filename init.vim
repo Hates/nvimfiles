@@ -69,6 +69,22 @@ let g:rustfmt_autosave = 1
 
 Plug 'majutsushi/tagbar'
 nmap <F2> :TagbarToggle<CR>
+let g:tagbar_type_elixir = {
+    \ 'ctagstype' : 'elixir',
+    \ 'kinds' : [
+        \ 'f:functions',
+        \ 'functions:functions',
+        \ 'c:callbacks',
+        \ 'd:delegates',
+        \ 'e:exceptions',
+        \ 'i:implementations',
+        \ 'a:macros',
+        \ 'o:operators',
+        \ 'm:modules',
+        \ 'p:protocols',
+        \ 'r:records'
+    \ ]
+    \ }
 
 "" Theme plugins.
 Plug 'itchyny/lightline.vim'
