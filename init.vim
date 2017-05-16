@@ -14,10 +14,6 @@ let g:gutentags_cache_dir = '~/.tags_cache'
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-let g:fzf_action = {
-      \ 'ctrl-s': 'split',
-      \ 'ctrl-v': 'vsplit'
-      \ }
 nnoremap <c-p> :FZF<cr>
 
 Plug 'jlanzarotta/bufexplorer'
