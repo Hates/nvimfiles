@@ -15,6 +15,7 @@ let g:gutentags_cache_dir = '~/.tags_cache'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 nnoremap <c-p> :FZF<cr>
+let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -g ""'
 
 Plug 'jlanzarotta/bufexplorer'
 map <C-b> :BufExplorer<CR>
