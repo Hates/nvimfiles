@@ -37,6 +37,7 @@ let g:NERDTreeMouseMode=1
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
 nnoremap <Leader>r :NERDTreeToggle<CR>
+nnoremap <Leader>t :NERDTreeFind<CR>
 
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-abolish'
