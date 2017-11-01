@@ -65,6 +65,7 @@ let g:go_highlight_build_constraints = 1
 Plug 'rust-lang/rust.vim', { 'for': 'rust' }
 let g:rustfmt_autosave = 1
 
+Plug 'ludovicchabant/vim-gutentags'
 Plug 'majutsushi/tagbar'
 nmap <F2> :TagbarToggle<CR>
 let g:tagbar_type_elixir = {
@@ -89,6 +90,18 @@ Plug 'itchyny/lightline.vim'
 Plug 'dracula/vim'
 
 call plug#end()
+
+" Performance improvments
+if has("mac")
+  set nocursorline
+
+  if exists("+relativenumber")
+    set norelativenumber
+  endif
+
+  set foldlevel=0
+  set foldmethod=manual
+endif
 
 " Use lazy redraw
 set lazyredraw
