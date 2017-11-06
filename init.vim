@@ -9,9 +9,6 @@ let g:deoplete#enable_at_startup = 1
 
 Plug 'Yggdroot/indentLine'
 
-Plug 'ludovicchabant/vim-gutentags'
-let g:gutentags_cache_dir = '~/.tags_cache'
-
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 nnoremap <c-p> :FZF<cr>
@@ -39,6 +36,7 @@ let g:NERDTreeDirArrowCollapsible = '▾'
 nnoremap <Leader>r :NERDTreeToggle<CR>
 nnoremap <Leader>t :NERDTreeFind<CR>
 
+Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-abolish'
 
@@ -66,6 +64,7 @@ Plug 'rust-lang/rust.vim', { 'for': 'rust' }
 let g:rustfmt_autosave = 1
 
 Plug 'ludovicchabant/vim-gutentags'
+let g:gutentags_cache_dir = '~/.tags_cache'
 Plug 'majutsushi/tagbar'
 nmap <F2> :TagbarToggle<CR>
 let g:tagbar_type_elixir = {
