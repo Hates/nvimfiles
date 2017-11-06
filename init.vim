@@ -37,6 +37,8 @@ nnoremap <Leader>r :NERDTreeToggle<CR>
 nnoremap <Leader>t :NERDTreeFind<CR>
 
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb'
+Plug 'tommcdo/vim-fubitive'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-abolish'
 
