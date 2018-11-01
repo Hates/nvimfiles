@@ -66,8 +66,9 @@ let g:go_highlight_build_constraints = 1
 Plug 'rust-lang/rust.vim', { 'for': 'rust' }
 let g:rustfmt_autosave = 1
 
-Plug 'ludovicchabant/vim-gutentags'
-let g:gutentags_cache_dir = '~/.tags_cache'
+"Plug 'ludovicchabant/vim-gutentags'
+"let g:gutentags_cache_dir = '~/.tags_cache'
+
 Plug 'majutsushi/tagbar'
 nmap <F2> :TagbarToggle<CR>
 let g:tagbar_type_elixir = {
