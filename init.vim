@@ -38,36 +38,17 @@ nnoremap <Leader>t :NERDTreeFind<CR>
 
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
-Plug 'tommcdo/vim-fubitive'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-abolish'
+Plug 'tommcdo/vim-fubitive'
 
 Plug 'vim-ruby/vim-ruby', { 'for': ['ruby', 'eruby'] }
 Plug 'tpope/vim-rails', { 'for': ['ruby', 'eruby'] }
 Plug 'tpope/vim-haml', { 'for': 'haml' }
-Plug 'slim-template/vim-slim', { 'for': 'slim' }
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
-Plug 'elixir-lang/vim-elixir', { 'for': 'elixir' }
-Plug 'slashmili/alchemist.vim', { 'for': 'elixir' }
-let g:alchemist_tag_disable = 1
-Plug 'udalov/kotlin-vim', { 'for': 'kotlin' }
-Plug 'rhysd/vim-crystal', { 'for': 'crystal' }
-Plug 'fatih/vim-go', { 'for': 'go' }
-au FileType go nmap ® <Plug>(go-run-split)
-au FileType go nmap † <Plug>(go-test)
-let g:go_term_mode = "split"
-let g:go_highlight_functions = 1
-let g:go_highlight_methods = 1
-let g:go_highlight_fields = 1
-let g:go_highlight_types = 1
-let g:go_highlight_operators = 1
-let g:go_highlight_build_constraints = 1
 
-Plug 'rust-lang/rust.vim', { 'for': 'rust' }
-let g:rustfmt_autosave = 1
-
-"Plug 'ludovicchabant/vim-gutentags'
-"let g:gutentags_cache_dir = '~/.tags_cache'
+Plug 'ludovicchabant/vim-gutentags'
+let g:gutentags_cache_dir = '~/.tags_cache'
 
 Plug 'majutsushi/tagbar'
 nmap <F2> :TagbarToggle<CR>
