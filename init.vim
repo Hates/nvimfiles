@@ -37,15 +37,11 @@ nnoremap <Leader>r :NERDTreeToggle<CR>
 nnoremap <Leader>t :NERDTreeFind<CR>
 
 Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-rhubarb'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-abolish'
-Plug 'tommcdo/vim-fubitive'
 
 Plug 'vim-ruby/vim-ruby', { 'for': ['ruby', 'eruby'] }
 Plug 'tpope/vim-rails', { 'for': ['ruby', 'eruby'] }
-Plug 'tpope/vim-haml', { 'for': 'haml' }
-Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 
 Plug 'ludovicchabant/vim-gutentags'
 let g:gutentags_cache_dir = '~/.tags_cache'
@@ -169,7 +165,8 @@ augroup END
 
 set showbreak=↪
 
-set formatoptions-=o "dont continue comments when pushing o/O
+"Dont continue comments when pushing o/O
+set formatoptions-=o 
 
 " Vertical/horizontal scroll off settings
 set scrolloff=6
